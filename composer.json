@@ -1,0 +1,19 @@
+{
+    "name": "pizza-order-service",
+    "description": "Servicio de pedidos de pizza con principios SOLID",
+    "type": "project",
+    "require": {
+      "slim/slim": "^4.10",
+      "slim/psr7": "^1.5",
+      "php-di/php-di": "^6.4"
+    },
+    "autoload": {
+      "psr-4": {
+        "App\\": "src/"
+      }
+    },
+    "scripts": {
+      "start": "php -S localhost:8080 -t public"
+    }
+  }
+  

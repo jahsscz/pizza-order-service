@@ -1,0 +1,20 @@
+### Crear un pedido de pizza personalizada
+POST http://localhost:8080/orders/order
+Content-Type: application/json
+
+{
+    "type": "custom",
+    "ingredients": ["tomato", "mozzarella", "pepperoni"]
+}
+
+### Crear un pedido de pizza predefinida
+POST http://localhost:8080/orders/order
+Content-Type: application/json
+
+{
+    "type": "predefined",
+    "name": "Margherita"
+}
+
+### Listar todas las pizzas predefinidas
+GET http://localhost:8080/pizzas
